@@ -1,0 +1,30 @@
+{
+  "presets": [["env", {
+		"targets" : {
+			"browsers":  ["> 1%", "last 2 versions", "iOS >= 8", "Android >= 4", "Explorer >= 8", "Firefox >= 43", "Chrome >= 45"]
+    },
+    "useBuiltIns": "usage",
+    "debug": false,
+		"modules": false
+	}], "react", "stage-2"],
+  "plugins": [
+    "syntax-dynamic-import",
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "react-hot-loader/babel",
+    "transform-object-assign",
+    "transform-object-rest-spread",
+    ["import", {
+      "libraryName": "antd",
+      "libraryDirectory": "es",
+      "style": true
+    }]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    }
+  }
+}
