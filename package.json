@@ -77,7 +77,6 @@
   "ci": {
     "version": "8"
   },
-  "homepage": "https://github.com/hubcarl/easywebpack-cli-template#readme",
   "author": "jianxcao@126.com",
   "license": "MIT",
   "webpack": {
