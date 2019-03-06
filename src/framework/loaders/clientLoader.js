@@ -50,6 +50,7 @@ module.exports = function(source) {
     }
     export default connectDva['default'](models, resource.dvaOpt || window.dvaOpt, resource.routers)(resource['default']);
   `;
+  this.resourcePath = path.dirname(this.resourcePath) + '/source.'+ path.basename(this.resourcePath);
   return stri;
 };
 
